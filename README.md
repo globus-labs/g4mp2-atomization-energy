@@ -8,9 +8,8 @@ The paper describing this activity is in preparation for submission to MRS Commu
 
 A copy of this repository with the generated data files (which are too large to host on GitHub)
 will soon be able on the Materials Data Facility.
-It will also soon be possible to run all of these scripts in a pre-configured Virtual Machine via WholeTale. 
-
-*Note*: The data used to train our models will soon be made available, I am just waiting for it to be published.
+It will also soon be possible to run all of these scripts in a pre-configured Virtual Machine via [WholeTale](http://wholetale.org)
+and to excecute the models via [DLHub](https://dlhub.org)
 
 # Installation
 
