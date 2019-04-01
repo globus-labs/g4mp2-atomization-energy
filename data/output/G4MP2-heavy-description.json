@@ -1,0 +1,181 @@
+{
+  "datacite": {
+    "creators": [
+      {
+        "givenName": "Rajeev",
+        "familyName": "Assary",
+        "affiliations": [
+          "Argonne National Laboratory"
+        ]
+      },
+      {
+        "givenName": "Badri",
+        "familyName": "Narayanan",
+        "affiliations": [
+          "Argonne National Laboratory"
+        ]
+      },
+      {
+        "givenName": "Lei",
+        "familyName": "Cheng",
+        "affiliations": [
+          "Argonne National Laboratory"
+        ]
+      },
+      {
+        "givenName": "Larry",
+        "familyName": "Curtiss",
+        "affiliations": [
+          "Argonne National Laboratory"
+        ]
+      }
+    ],
+    "titles": [
+      {
+        "title": "Solubilities and G4MP2 Energies of 66 Sugar Molecules"
+      }
+    ],
+    "publisher": "DLHub",
+    "publicationYear": "2019",
+    "identifier": {
+      "identifier": "10.YET/UNASSIGNED",
+      "identifierType": "DOI"
+    },
+    "descriptions": [],
+    "fundingReferences": [],
+    "relatedIdentifiers": [],
+    "alternateIdentifiers": [],
+    "rightsList": [],
+    "resourceType": {
+      "resourceTypeGeneral": "Dataset"
+    }
+  },
+  "dlhub": {
+    "version": "0.7.0",
+    "domains": [],
+    "visible_to": [
+      "public"
+    ],
+    "name": "G4MP2-heavy",
+    "files": {
+      "data": "data/output/sugar_data.json"
+    },
+    "type": "dataset"
+  },
+  "dataset": {
+    "format": "json",
+    "read_options": {
+      "lines": true
+    },
+    "columns": [
+      {
+        "name": "g4mp2_0k",
+        "type": "float",
+        "description": "G4MP2 Internal energy at 0K",
+        "units": "Ha"
+      },
+      {
+        "name": "g4mp2_atom",
+        "type": "float",
+        "description": "G4MP2 atomization energy at 0K",
+        "units": "Ha"
+      },
+      {
+        "name": "g4mp2_energy",
+        "type": "float",
+        "description": "G4MP2 Internal energy at 298.15K",
+        "units": "Ha"
+      },
+      {
+        "name": "g4mp2_enthalpy",
+        "type": "float",
+        "description": "G4MP2 Enthalpy at 298.15K",
+        "units": "Ha"
+      },
+      {
+        "name": "g4mp2_free",
+        "type": "float",
+        "description": "G4MP2 Free eergy at 0K",
+        "units": "Ha"
+      },
+      {
+        "name": "g4mp2_zpe",
+        "type": "float",
+        "description": "Zero-point energy of molecule",
+        "units": "Ha"
+      },
+      {
+        "name": "in_holdout",
+        "type": "boolean",
+        "description": "Whether the entry is in the test set"
+      },
+      {
+        "name": "n_atoms",
+        "type": "integer",
+        "description": "Number of atoms"
+      },
+      {
+        "name": "n_electrons",
+        "type": "integer",
+        "description": "Number of electrons"
+      },
+      {
+        "name": "n_heavy_atoms",
+        "type": "integer",
+        "description": "Number of non-hydrogen atoms"
+      },
+      {
+        "name": "name",
+        "type": "python object",
+        "description": "Filename, which contains the name of the molecule"
+      },
+      {
+        "name": "smiles",
+        "type": "string",
+        "description": "SMILES string after relaxation"
+      },
+      {
+        "name": "sol_acn",
+        "type": "float",
+        "description": "Solubility in acn"
+      },
+      {
+        "name": "sol_dmso",
+        "type": "float",
+        "description": "Solubility in dmso"
+      },
+      {
+        "name": "sol_water",
+        "type": "float",
+        "description": "Solubility in water"
+      },
+      {
+        "name": "u0",
+        "type": "float",
+        "description": "B3LYP Internal energy at 0K",
+        "units": "Ha"
+      },
+      {
+        "name": "u0_atom",
+        "type": "float",
+        "description": "B3LYP atomization energy at 0K",
+        "units": "Ha"
+      },
+      {
+        "name": "xyz",
+        "type": "XYZ file",
+        "description": "XYZ coordinates after relaxation"
+      },
+      {
+        "name": "zpe",
+        "type": "float",
+        "description": "B3LYP Zero point vibrational energy",
+        "units": "Ha"
+      }
+    ],
+    "inputs": [
+      "smiles",
+      "xyz"
+    ]
+  }
+}
