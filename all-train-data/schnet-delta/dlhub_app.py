@@ -55,10 +55,9 @@ def evaluate_molecules(molecules: List[str], b3lyp_energies: List[float]) -> Lis
 
 if __name__ == "__main__":
     # Get some data
-    from jcesr_ml.benchmark import load_benchmark_data
-    train_data, _ = load_benchmark_data()
-    train_data = train_data.sample(100)
-
+    mols = ['3\nH2 O1\nO -0.034360 0.977540 0.007602\nH 0.064766 0.020572 0.001535\nH 0.871790 1.300792 0.000693']
+    b3lyp = [-76.404702]
+    
     # Evaluate the energies
-    pred = evaluate_molecules(train_data['xyz'], train_data['u0'])
-    assert np.subtract(pred, train_data['g4mp2_atom']).abs().mean() < 1e-3
+    pred = evaluate_molecules(mols, b3lyp)
+    assert np.abs(np.subtract(pred, [-0.349181])).mean() < 1e-3
