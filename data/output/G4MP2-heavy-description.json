@@ -51,7 +51,7 @@
     }
   },
   "dlhub": {
-    "version": "0.7.0",
+    "version": "0.7.4",
     "domains": [],
     "visible_to": [
       "public"
@@ -110,7 +110,7 @@
         "description": "Whether the entry is in the test set"
       },
       {
-        "name": "n_atoms",
+        "name": "n_atom",
         "type": "integer",
         "description": "Number of atoms"
       },
