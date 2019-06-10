@@ -15,3 +15,10 @@ and to excecute the models via [DLHub](https://dlhub.org)
 
 The scripts in this project require the utility scripts in [`jcesr_ml`](jcesr_ml) and the requirements
 are listed in the `environment.yml` file.
+
+Install the environment with [Anaconda](https://conda.io/en/latest/) by calling:
+
+```bash
+
+conda env create --file environment.yml
+```
