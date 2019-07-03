@@ -18,6 +18,6 @@ dependencies:
     - mdf_forge==0.6.4
     - dlhub_sdk==0.8.0
     - globus_sdk==1.7.1
-    - git+https://github.com/WardLT/schnetpack.git@add_inputs#egg=schnetpack
+    - git+https://github.com/WardLT/schnetpack.git@d9439d2#egg=schnetpack
     - git+https://github.com/WardLT/qml.git@change_xyz#egg=qml
     - -e.
