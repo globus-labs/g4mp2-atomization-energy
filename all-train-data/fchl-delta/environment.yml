@@ -1,0 +1,9 @@
+name: fchl_dlhub
+dependencies:
+  - python==3.6
+  - numpy==1.15.4
+  - pip
+  - pip:
+    - ase
+    - git+https://github.com/WardLT/qml.git@dlhub#egg=qml
+    
