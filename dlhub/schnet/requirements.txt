@@ -1,3 +1,3 @@
 torch==0.4.1
-git+https://github.com/WardLT/schnetpack.git@add_inputs#egg=schnetpack
+git+https://github.com/WardLT/schnetpack.git@d9439d2#egg=schnetpack
 numpy==1.15.4

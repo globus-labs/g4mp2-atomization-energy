@@ -11,3 +11,8 @@ an `about.yml` file that contains the metadata about the model.
 `publish_model.py` file reads from the `about.yml` to create a full
 metadata description and publishes the model files along with
 a python API to invoke the model defined in `dlhub_sdk.py`
+
+## Running the Models
+
+The notebook in this directory demonstrates how to find and 
+run all of the machine learning models associated with our project.

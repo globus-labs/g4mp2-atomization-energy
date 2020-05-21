@@ -65,6 +65,8 @@ with open('input_key.json', 'w') as fp:
 model.add_file('dlhub_app.py')
 model.add_file(os.path.join('model', 'architecture.pth'))
 model.add_file(os.path.join('model', 'best_model'))
+model.add_file('train_dataset.pkl')
+model.add_file('input_key.json')
 model.add_directory('jcesr_ml', recursive=True, include='*.py')
 model.parse_repo2docker_configuration()
 
