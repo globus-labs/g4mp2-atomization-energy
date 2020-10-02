@@ -1,23 +1,24 @@
 name: g4mp2_ml
 channels:
   - openbabel
-  - matsci
+  - conda-forge
+  - defaults
 dependencies:
-  - python==3.7.2
-  - numpy==1.15.4
-  - pymatgen==2019.1.24
-  - pandas==0.23.4
+  - python==3.7.*
+  - numpy==1.16.*
+  - pymatgen==2019.7.2
+  - pandas==0.23.*
   - scikit-learn==0.20.0
   - pytorch==0.4.1
-  - matplotlib==3.0.3
+  - matplotlib==3.*
   - openbabel==2.4.1
   - jupyterlab
   - pytest
   - pip
   - pip:
-    - mdf_forge==0.6.4
-    - dlhub_sdk==0.8.0
-    - globus_sdk==1.7.1
+    - mdf_forge
+    - dlhub_sdk
+    - globus_sdk
     - git+https://github.com/WardLT/schnetpack.git@d9439d2#egg=schnetpack
     - git+https://github.com/WardLT/qml.git@change_xyz#egg=qml
     - -e.
